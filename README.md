@@ -1,0 +1,2 @@
+# Okul-Gif-Galerisi
+şaka
