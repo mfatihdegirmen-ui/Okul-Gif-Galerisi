@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIF Galerisi & İndirme</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Üst Bilgi ve Arama Alanı -->
+    <header class="header">
+        <a href="admin.html" class="admin-link"><i class="fa-solid fa-lock"></i> Admin Paneli</a>
+        <h1>GIF Galerisi</h1>
+        <p>Beğendiğin GIF'leri keşfet ve anında indir!</p>
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="searchInput" placeholder="GIF ara...">
+        </div>
+    </header>
+
+    <!-- GIF Galeri Izgarası -->
+    <main class="gallery-container">
+        <div class="gallery" id="gifGallery">
+            <!-- JavaScript ile dinamik olarak doldurulacak -->
+        </div>
+    </main>
+
+    <!-- Büyük Önizleme Modalı -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="modalCaption"></div>
+        <a id="modalDownload" href="" download class="modal-download-btn">
+            <i class="fa-solid fa-download"></i> Bu GIF'i İndir
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

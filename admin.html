@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Paneli - GIF Yönetimi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="admin-body">
+
+    <!-- Giriş Ekranı -->
+    <div id="loginScreen" class="admin-card">
+        <h2><i class="fa-solid fa-lock"></i> Admin Girişi</h2>
+        <p>Devam etmek için şifreyi girin</p>
+        <input type="password" id="adminPassword" placeholder="Şifre (Varsayılan: 1234)">
+        <button id="loginBtn" class="btn-action full-width">Giriş Yap</button>
+        <p id="loginError" class="error-msg">Şifre yanlış!</p>
+        <a href="index.html" class="back-link">← Siteye Geri Dön</a>
+    </div>
+
+    <!-- Yönetim Paneli (Giriş Yapılınca Görünür) -->
+    <div id="adminPanel" class="admin-dashboard" style="display: none;">
+        <div class="admin-top">
+            <h2>GIF Yönetim Paneli</h2>
+            <button id="logoutBtn" class="btn-logout"><i class="fa-solid fa-right-from-bracket"></i> Çıkış Yap</button>
+        </div>
+
+        <!-- GIF Ekleme Formu -->
+        <div class="add-form-card">
+            <h3>Yeni GIF Ekle</h3>
+            <input type="text" id="gifTitle" placeholder="GIF Başlığı (Örn: Eğlenceli Dans)">
+            <input type="text" id="gifUrl" placeholder="GIF Bağlantısı (URL veya dosya adı)">
+            <button id="addGifBtn" class="btn-action"><i class="fa-solid fa-plus"></i> GIF'i Yayınla</button>
+        </div>
+
+        <!-- Mevcut GIF'leri Listeleme ve Silme -->
+        <div class="admin-list-section">
+            <h3>Yüklü GIF'ler</h3>
+            <div id="adminGifList" class="admin-gif-list">
+                <!-- JavaScript ile doldurulacak -->
+            </div>
+        </div>
+        <a href="index.html" class="back-link margin-top">← Siteye Geri Dön</a>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
